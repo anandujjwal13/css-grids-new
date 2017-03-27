@@ -1,0 +1,19 @@
+.container {
+  background-color: red;
+  font-size:40px;
+  display: grid;
+  grid-gap: 10px;
+  height: 100vh;
+}
+.grid-item {
+  background-color: yellowgreen;
+}
+.grid-item:nth-of-type(2){
+  order :1;
+}
+.grid-item:nth-of-type(5){
+  order :-1;
+}
+.grid-item:nth-of-type(3){
+  grid-row :1;
+}

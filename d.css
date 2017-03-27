@@ -1,0 +1,27 @@
+.container{
+  display:grid;
+  grid-template-columns:
+  [left-sidebar-start] 1fr
+  [main-content-start] 2fr
+  [right-sidebar] 1fr;
+  grid-template-rows:
+  [body-start] 80fr
+  [footer-start] 20fr;
+  height:100vh;
+  grid-gap:15px;
+}
+.container > * {
+  background-color:palegoldenrod;
+  font-size:30px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  text-align:center;
+}
+.footer{
+  grid-column : main-content-start / -1;
+}
+
+.left-sidebar {
+  grid-row:body-start / -1;
+}

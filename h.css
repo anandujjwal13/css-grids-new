@@ -1,0 +1,17 @@
+.container {
+  display:grid;
+  grid-gap:10px;
+  height:100vh;
+  grid-template-columns:
+  repeat(auto-fit ,
+  minmax(200px,auto)
+     );
+     /*auto-fit and auto-fill is for columns only and not for
+     the grid-template-rows
+     */
+}
+.box {
+  background-color: palegoldenrod;
+  font-size:20px;
+  
+}
